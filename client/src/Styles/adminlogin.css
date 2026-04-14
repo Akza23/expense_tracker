@@ -1,0 +1,71 @@
+/* Full page background */
+.admin-login-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #eef1f5;
+	/* soft light grey */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form box */
+.admin-login-form {
+	background: #ffffff;
+	padding: 35px 30px;
+	border-radius: 12px;
+	width: 320px;
+	box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+	border-top: 4px solid #2c3e50;
+	/* dark admin accent */
+}
+
+/* Heading */
+.admin-login-form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #2c3e50;
+}
+
+/* Labels */
+.admin-login-form label {
+	display: block;
+	margin-bottom: 6px;
+	font-size: 14px;
+	color: #555;
+}
+
+/* Inputs */
+.admin-login-form input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	outline: none;
+	transition: 0.3s;
+}
+
+/* Input focus */
+.admin-login-form input:focus {
+	border-color: #2c3e50;
+}
+
+/* Button */
+.admin-login-form button {
+	width: 100%;
+	padding: 10px;
+	background: #2c3e50;
+	/* dark blue-grey */
+	border: none;
+	border-radius: 6px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/* Button hover */
+.admin-login-form button:hover {
+	background: #1a252f;
+}
