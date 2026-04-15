@@ -7,7 +7,7 @@ function UserDashboard() {
 	const navigate = useNavigate();
 	const [detailes, setdetailes] = useState()
 	const handleAddExpense = () => {
-		navigate("/add-expense");
+		// navigate("/addexpense");
 	};
 	useEffect(() => {
 		(async () => {

@@ -74,8 +74,8 @@ router.get("/weekly", async (req, res) => {
     // console.log(sunday.getDate())
     const saturday = new Date(currentdate.setDate(sunday.getDate() + 6))
     // console.log(saturday)
-    const expense = await Expense.find({ "UserID": decoded.id, Date: { $gt: sunday, $lt: saturday } })
-    res.send(expense)
+    const expense = await Expense.find({ "UserID": decoded.id,Date: { $gt: sunday, $lt: saturday } })
+    res.send( expense )
 })
 
 router.get("/monthly", async (req, res) => {
@@ -86,7 +86,7 @@ router.get("/monthly", async (req, res) => {
     console.log(currentdate.getFullYear())
     const lday = new Date(currentdate.getFullYear(), currentdate.getMonth() + 1, 0)
     console.log(lday)
-    const expense = await Expense.find({ "UserID": decoded.id, Date: { $gt: fday, $lt: lday } })
+    const expense = await Expense.find({"UserID": decoded.id, Date: { $gt: fday, $lt: lday } })
     res.send(expense)
 })
 
@@ -99,11 +99,11 @@ router.get("/weeklyuser", async (req, res) => {
         const day = currentdate.getDay()
         const sunday = new Date(currentdate.setDate(currentdate.getDate() - day))
         const saturday = new Date(currentdate.setDate(sunday.getDate() + 6))
-        const expense = await Expense.find({ "UserID": decoded.id, Date: { $gt: sunday, $lt: saturday } })
+        const expense = await Expense.find({"UserID":decoded.id, Date: { $gt: sunday, $lt: saturday } })
         res.send({ message: "Current user  Week Expense", expense })
     }
-    catch (e) {
-        if (e instanceof jwt.JsonWebTokenError || e instanceof jwt.TokenExpiredError) {
+    catch(e) {
+if (e instanceof jwt.JsonWebTokenError || e instanceof jwt.TokenExpiredError) {
             res.status(403).send({ message: "jwt error", error: e })
         }
         res.status(400).send({ message: "Error Occured", error: e })
