@@ -1,6 +1,8 @@
 import axios from "axios"
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useParams } from "react-router"
+import "../Styles/viewuserexp.css"
+
 function Viewuserexpense() {
     const [userexp, setitem] = useState([])
     const { id } = useParams()

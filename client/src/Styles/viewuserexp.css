@@ -1,0 +1,72 @@
+/* Page layout */
+body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Table container (optional wrapper if you add div) */
+.table-container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Table styling */
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+thead {
+    background: #2c3e50;
+    color: white;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Rows */
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background: #f9fbfc;
+}
+
+/* Cells */
+td {
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Badge common */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Credit (CR) - red */
+.badgered {
+    background: #e74c3c;
+}
+
+/* Debit (DR) - green */
+.badgegreen {
+    background: #27ae60;
+}

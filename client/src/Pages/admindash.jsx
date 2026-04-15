@@ -45,7 +45,7 @@ function Admindash() {
 				<h2 className="navbar-brand">Admin Dashboard</h2>
 				<div className="nav-links">
 					<Link to="/viewusers">Users</Link>
-					<button >Logout</button>
+					<button ><Link to="/">Logout</Link></button>
 				</div>
 			</nav>
 
